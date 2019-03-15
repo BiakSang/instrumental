@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height">
+	<title>Instrumental</title>
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	
+	<link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+	<header>
+		<h1><img src="assets/images/instrumental_logo.png" id="logo"><span>instrumental</span></h1>
+		<div id="nav">
+			<button class="nav active" id="genre_button">Genre</button>
+			<button class="nav" id="instruments_button">Instruments</button>
+			<button class="nav" id="mood_button">Mood</button>
+			<button class="nav" id="artists_button">Artists</button>
+			<a href="#category=popular"><button>Popular</button></a>
+		</div>
+	</header>
+	
+	<main></main>
+	
+	<!--views-->
+	<div id="music"></div>
+	
+	
+	
+	
+	<footer>
+		<div id="upload">
+			<h1>Upload Music</h1>
+			<input type="text" placeholder="Name Of Music">
+			<input type="text" placeholder="Genre">
+			<input type="text" placeholder="Mood">
+			<input type="text" placeholder="Artist">
+			<input type="file" accept="audio/mp3" id="choose_file">
+			<button type="button" id="choose">Choose audio</button>
+			<button type="submit" id="submit">Upload</button>
+		</div>
+		<div id="footer_content">
+			<p>Designed and developed by <a href="http://biaksang.xyz" target="_blank">Biak Sang</a></p>
+			<p>All audio are downloaded from <a href="https://www.youtube.com/audiolibrary/music">Youtube audio library</a></p>
+		</div>
+	</footer>
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/index.js"></script>
+</body>
+</html>

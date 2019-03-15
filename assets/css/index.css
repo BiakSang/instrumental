@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Poppins|Kaushan+Script|Lilita+One');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+/*header*/
+header {
+	display: block;
+	width: 100%;
+	padding: 5vw 2.5vw 2.5vw 2.5vw;
+	background: #eee;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 200;
+}
+
+header h1 {
+	font-family: 'Lilita One', sans-serif;
+	font-weight: bold;
+	line-height: 5vw;
+	color: brown;
+	letter-spacing: .4px;
+	text-transform: capitalize;
+}
+
+header h1 span {
+	width: 8vw;
+	line-height: 5vw;
+	font-size: 4.5vw;
+	white-space: nowrap;
+	overflow: visible;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: .5vw;
+	border-bottom: .5vw double #4d004d;
+}
+
+#logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 5vw;
+	border-radius: 50%;
+	margin-right: 1vw;
+}
+
+#nav {
+	display: inline-block;
+	position: absolute;
+	right: 2.5vw;
+	bottom: 3.25vw;
+	height: 3.5vw;
+	font-size: 0;
+}
+
+#nav a {
+	text-decoration: none;
+}
+
+#nav button {
+	display: inline-block;
+	vertical-align: middle;
+	height: 3.5vw;
+	font-size: 1vw;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	padding: 0 1vw;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	letter-spacing: .4px;
+	color: #444;
+	transition: .4s;
+	margin-right: 1vw;
+}
+
+#nav button.active {
+	background: #111;
+	padding: 0 2vw 0 5vw;
+	color: #fff;
+}
+
+#nav button:hover {
+	background: #111;
+	padding: 0 2vw 0 5vw;
+	color: #fff;
+}
+
+
+@media only screen and (max-width: 500px){
+	
+	header {
+		padding: 5vw 4vw 0 4vw;
+		height: 27.7vw;
+		overflow: hidden;
+	}
+	
+	header h1 {
+		display: block;
+		width: 100%;
+		line-height: 10vw;
+		margin-bottom: 2vw;
+	}
+	
+	header h1 span {
+		line-height: 10vw;
+		font-size: 9vw;
+		width: auto;
+		border: 0;
+		top: 0;
+	}
+	
+	#logo {
+		width: 10vw;
+		margin-right: 4vw;
+	}
+	
+	#nav {
+		display: block;
+		position: relative;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 20vw;
+		text-align: left;
+		white-space: nowrap;
+		overflow: auto;
+		padding: 0 14vw;
+	}
+	
+	#nav button {
+		display: inline-block;
+		height: 10vw;
+		font-size: 3.5vw;
+		padding: 0 3.3vw;
+		color: #111;
+		border-bottom: .7vw solid transparent;
+	}
+	
+	#nav button.active {
+		background: transparent;
+		border-bottom: .7vw solid orange;
+		color: #111;
+		padding: 0 3.3vw;
+	}
+
+	#nav button:hover {
+		padding: 0 3.3vw;
+		color: #111;
+		background: transparent;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+/*main*/
+main {
+	display: block;
+	width: 100%;
+	padding: 23vw 2.5vw 2.5vw 2.5vw;
+	position: relative;
+	z-index: 100;
+}
+
+#title {
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: #ddd;
+	font-size: 10vw;
+	line-height: 10vw;
+	font-family: 'Kaushan Script', sans-serif;
+	font-weight: bold;
+	position: absolute;
+	z-index: 50;
+	top: 15vw;
+	left: 0;
+	padding: 0 2.5vw;
+}
+
+.page {
+	display: block;
+	width: 100%;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.page {
+	font-size: 0;
+}
+
+.page a {
+	text-decoration: none;
+}
+
+.page .category {
+	display: inline-block;
+	vertical-align: middle;
+	width: 21%;
+	height: 27vw;
+	margin: 0 2% 4% 2%;
+	border-radius: .5vw;
+	overflow: hidden;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.page .category button {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border: 0;
+	outline: 0;
+	background: rgba(200,0,100,.4);
+	font-size: 2vw;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	transition: .4s;
+	border-radius: .5vw;
+}
+
+.page .category button:hover {
+	background: rgba(0,0,0,.7);
+}
+
+@media only screen and (max-width: 900px) {
+	
+	.page .category {
+		width: 29.333333333%;
+		height: 40vw;
+	}
+	
+}
+
+
+@media only screen and (max-width: 500px){
+	
+	main {
+		padding: 42.7vw 4vw 4vw 4vw;
+	}
+	
+	#title {
+		line-height: 10vw;
+		font-size: 10vw;
+		top: 34vw;
+		text-align: left;
+		padding: 0 4vw;
+	}
+	
+	.page .category {
+		display: block;
+		width: 100%;
+		height: 90vw;
+		margin: 0;
+		margin-bottom: 4vw;
+		border-radius: 1vw;
+		overflow: hidden;
+	}
+	
+	.page .category button {
+		font-size: 6vw;
+	}
+	
+}
+
+
+
+
+
+
+/*music*/
+#music {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+	background: #fff;
+	top: 0;
+	left: 0;
+	font-size: 0;
+	overflow: auto;
+	white-space: nowrap;
+	padding: 10vw 5vw 5vw 5vw;
+	background: #ddd;
+	background: linear-gradient(to right, #ddd, #eee, #ddd, #eee);
+}
+
+#music::-webkit-scrollbar {
+	display: none;
+}
+
+#music_name {
+	display: block;
+	width: 100%;
+	line-height: 10vw;
+	font-size: 10vw;
+	color: brown;
+	font-family: 'Kaushan Script', sans-serif;
+	padding: 0 5vw;
+	opacity: .1;
+	position: fixed;
+	z-index: 0;
+	top: 1.5vw;
+	left: 0;
+	text-transform: capitalize;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.music {
+	display: inline-block;
+	vertical-align: middle;
+	background: #fff;
+	width: 45vh;
+	height: 100%;
+	margin-right: 2vw;
+	border-radius: 1vw;
+	position: relative;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.music_img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	filter: blur(3px);
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.loading {
+	display: none;
+	width: 20%;
+	position: absolute;
+	z-index: 2;
+	top: 10vh;
+	left: 40%;
+}
+
+.play_pause {
+	display: block;
+	width: 30%;
+	position: absolute;;
+	z-index: 50;
+	left: 35%;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 3vh;
+	border-radius: 50%;
+	background: #ddd;
+	border: .5vh solid #fff;
+}
+
+.music_name {
+	display: block;
+	width: 100%;
+	position: absolute;
+	z-index: 40;
+	top: 0;
+	left: 0;
+	line-height: 10vh;
+	font-size: 2vh;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: .2vh;
+	padding: 0 2vh;
+	text-transform: capitalize;
+}
+
+.duration {
+	display: block;
+	width: 100%;
+	line-height: 10vh;
+	position: absolute;
+	z-index: 40;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	font-size: 2vh;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+}
+
+.visible_range {
+	display: block;
+	width: 0%;
+	height: 2px;
+	margin-bottom: 4px;
+	position: absolute;
+	z-index: 5;
+	background: #fff;
+	bottom: 14vh;
+	left: 0;
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+	appearance: none;
+	display: none;
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	z-index: 30;
+	bottom: 14vh;
+	left: 0;
+	background: transparent;
+}
+
+input[type=range]:focus {
+	outline: 0;
+	border: 0;
+}
+
+input[type=range]::-ms-track {
+	display: none;
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	z-index: 30;
+	bottom: 14vh;
+	left: 0;
+	background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.audio {
+	display: block;
+	position: fixed;
+	z-index: -1;
+	left: -100vw;
+}
+
+
+
+@media only screen and (max-width: 500px){
+	
+	#music {
+		white-space: normal;
+		padding: 20vw 10vw 10vw 10vw;
+	}
+	
+	#music_name {
+		position: absolute;
+		top: 11vw;
+		padding: 0 10vw;
+	}
+	
+	.music {
+		display: block;
+		width: 100%;
+		height: 100vw;
+		margin-right: 0;
+		margin-bottom: 5vw;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer {
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: 100;
+}
+
+footer #upload {
+	display: block;
+	width: 100%;
+	font-size: 0;
+	position: relative;
+	padding: 0 10vw 50px 10vw;
+}
+
+footer #upload h1 {
+	display: block;
+	width: 100%;
+	line-height: 7vw;
+	font-size: 5vw;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	color: #4d004d;
+	margin-bottom: 10px;
+}
+
+footer #upload input:not(#choose_file) {
+	display: inline-block;
+	width: 48%;
+	height: 5vw;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	padding: 0 1vw;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1vw;
+	border: 1px solid #999;
+	outline: 0;
+	background: transparent;
+}
+
+#choose_file {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: -100vw;
+}
+
+#choose, #submit {
+	display: inline-block;
+	height: 3vw;
+	padding: 0 3vw;
+	margin-right: 1vw;
+	font-size: 1vw;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #fff;
+	background: red;
+	border: 0;
+	outline: 0;
+}
+
+#footer_content {
+	display: block;
+	width: 100%;
+	padding: 10px 10vw;
+	background: #000;
+	font-size: 0;
+}
+
+#footer_content p {
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+	line-height: 3vw;
+	font-size: 1vw;
+	color: #fff;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#footer_content p a {
+	text-decoration: none;
+	color: skyblue;
+}
+
+
+@media only screen and (max-width: 900px){
+	
+	footer #upload input:not(#choose_file){
+		display: block;
+		width: 100%;
+		height: 8vw;
+		margin: 0 0 2vw 0;
+		font-size: 2vw;
+		padding: 0 2vw;
+	}
+	
+	#choose, #submit {
+		height: 5vw;
+		font-size: 2vw;
+	}
+	
+	#footer_content {
+		padding: 0 2.5vw;
+	}
+	
+	#footer_content p {
+		font-size: 1.5vw;
+		line-height: 10vw;
+	}
+	
+}
+
+@media only screen and (max-width: 500px){
+	
+	footer #upload {
+		padding: 0 4vw 10vw 4vw;
+	}
+	
+	footer #upload input:not(#choose_file){
+		height: 15vw;
+		font-size: 3.5vw;
+	}
+	
+	footer #upload h1 {
+		font-size: 8vw;
+		line-height: 12vw;
+	}
+	
+	#choose, #submit {
+		height: 10vw;
+		font-size: 4vw;
+		padding: 0 5vw;
+	}
+	
+	#footer_content {
+		padding: 4vw;
+	}
+	
+	#footer_content p {
+		display: block;
+		width: 100%;
+		font-size: 3vw;
+		line-height: 8vw;
+		text-align: left;
+	}
+	
+}
